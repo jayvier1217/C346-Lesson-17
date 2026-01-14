@@ -16,8 +16,8 @@ const App = () => {
 
     const FilterData = (text) => {
         if (text != '') {
-            text = text. toLocaleLowerCase();
-            let myFilterData = originalData.filter((item) => item.card_name.toLocaleLowerCase().includes(text));
+            text = text. toLowerCase();
+            let myFilterData = originalData.filter((item) => item.card_name.toLowerCase().includes(text));
             setMyData(myFilterData);
         }
         else {
